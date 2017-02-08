@@ -3,9 +3,14 @@ var namespace = "http://www.w3.org/2000/svg"
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
-// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
+// Remember, for the shapes to show up on the canvas, you'll need to CALL the function
 function createFirstScene() {
+    makeImage("https://ih1.redbubble.net/image.312216535.4252/flat,550x550,075,f.u1.jpg", 0, 0,
+ 100, 100)
     
+    makeImage("http://www.mememaker.net/static/images/memes/4255810.jpg", 0, 0, 300, 80)
+    
+    makeRect(0, 0, 100, 100, "blue", 0.3 )
 }
 
 
@@ -31,6 +36,14 @@ function createThirdScene() {
 // FILL IN THIS FUNCTION!
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
+    var number = Math.random()
+    if(number < 0.33){
+  createFirstScene()
+}else{
+  if(number <  0.67) {
+      createSecondScene()
+      }else{
+        createThirdScene()
     // Generate a random number between 0 and 1, and store it in a variable.
     
     // If the number is less than 0.33, call the function to create your first scene.
@@ -43,7 +56,8 @@ function createRandomScene() {
     
     // Else, call the function to create your third scene.
     
-    
+      }
+}
     
 }
 

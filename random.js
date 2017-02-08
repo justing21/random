@@ -5,12 +5,16 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function
 function createFirstScene() {
+   
+    makeRect(0,0,500,500,"green")
     makeImage("https://ih1.redbubble.net/image.312216535.4252/flat,550x550,075,f.u1.jpg", 0, 0,
  100, 100)
     
-    makeImage("http://www.mememaker.net/static/images/memes/4255810.jpg", 0, 0, 300, 80)
+    makeImage("http://www.technollama.co.uk/Images/3strikes.jpg", 0, 0, 300, 50)
     
-    makeRect(0, 0, 100, 100, "blue", 0.3 )
+   makeText("When you strike", 110 , 70,13)
+   makeText("someone out!!", 110 , 90, 13)
+   
 }
 
 

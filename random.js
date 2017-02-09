@@ -26,8 +26,8 @@ function createSecondScene() {
        
        makeImage("http://getbettertoday.com/wp-content/uploads/2014/05/10.png", 0, 0,290, 90)
        
-       makeText("EEEEE", 30 , 70,13)
-   makeText("EEEEEE!!", 30 , 90, 13)
+       makeText("EEEEE", 20 , 60,18)
+   makeText("EEEEEE!!", 10 , 90, 18)
 }
 
 
@@ -35,6 +35,12 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
+    makeRect(0,0,500,500,"orange")
+    
+    makeImage("https://pbs.twimg.com/media/B7WJ_sXCQAA9_04.jpg", 0 , 0 , 290, 110)
+
+makeText("So", 20 , 60,18)
+   makeText("true!!", 10 , 90, 18)
     
 }
 

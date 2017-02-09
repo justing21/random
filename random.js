@@ -22,7 +22,12 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+       makeRect(0,0,500,500,"blue")
+       
+       makeImage("http://getbettertoday.com/wp-content/uploads/2014/05/10.png", 0, 0,290, 90)
+       
+       makeText("EEEEE", 30 , 70,13)
+   makeText("EEEEEE!!", 30 , 90, 13)
 }
 
 
